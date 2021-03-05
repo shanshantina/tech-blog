@@ -7,25 +7,25 @@
 
 {{#if posts.length}} 
 <section>
-    <ul class="post-list">
-        {{#each posts as |post|}}
-        <li>
-            {{> post-info post}}
-            <div class="row">
-                <div class="col-sm-6 ">
-                    <a href="/post/{{post.id}}" class="post-comment">
-                        {{post.comments.length}} {{format_plural "comment" post.comments.length}}
-                    </a>
-                </div>
+    <ul class="post-list row justify-content-center">
+        <div class="col-sm-10">
+            {{#each posts as |post|}}
+            <li>
+                {{> post-info post}}
+                <div class="row">
+                    <div class="col-sm-6 ">
+                        <a href="/post/{{post.id}}" class="post-comment">
+                            {{post.comments.length}} {{format_plural "comment" post.comments.length}}
+                        </a>
+                    </div>
 
-                <div class="col-sm-6">
-                    <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+                    <div class="col-sm-6">
+                        <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+                    </div>
                 </div>
-
-            </div>
-           
-        </li>
-        {{/each}}
+            </li>
+            {{/each}}
+        </div>
     </ul>
 </section>
 {{/if}}

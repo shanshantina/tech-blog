@@ -192,15 +192,19 @@ label {
 }
 
 
-#comment-list form {
-    border: 3px solid var(--border);
-    border-radius: 5px;
-    background-image: var(--gradient);
+#comment-list form:nth-child(even) {
+    background-color: var(--comment);
+    border-radius: 6px;
+}
+
+#comment-list form:nth-child(odd) {
+    background-color: var(--border);
+    border-radius: 6px;
+    color: var(--primary);
 }
 
 #comment-btn {
-    width: 46%;
-    
+    width: 46%;    
 }
 
 #single-content div article {

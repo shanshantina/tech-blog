@@ -2,10 +2,12 @@
     <div><span>Tech Blog</span></div>
 </section>
 
-<ul class="post-list">
-  {{#each posts as |post|}}
-  <li>
-    {{> post-info post }}
-  </li>
-  {{/each}}
+<ul class="post-list row justify-content-center">
+  <div class="col-sm-10">
+    {{#each posts as |post|}}
+    <li>
+      {{> post-info post }}
+    </li>
+    {{/each}}
+  </div>
 </ul>
