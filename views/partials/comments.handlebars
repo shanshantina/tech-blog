@@ -1,12 +1,12 @@
-<div class="comments">
+<div class="row justify-content-center" id="comment-list">
   {{#each this}}
-  <section class="comment">
-    <div class="meta">
+  <form class="col-sm-11 row" >
+    <div class="col-sm-12">
       {{user.username}} on {{format_date created_at}}
     </div>
-    <div class="text">
+    <div class="col-sm-12">
       {{comment_text}}
     </div>
-  </section>
+  </form>
   {{/each}}
 </div>

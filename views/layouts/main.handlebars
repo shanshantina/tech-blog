@@ -4,30 +4,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Tech Blog</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="/stylesheets/style.css">
+  <title>The Tech Blog</title>
 </head>
 
 <body>
-  <div class="wrapper">
     <header>
-      <nav>
-          <a href="/">Home</a>
-          <a href="/dashboard">Dashboard</a>
+      <nav class="nav">
+          <a href="/" class="nav-link">Home</a>
+          <a href="/dashboard" class="nav-link">Dashboard</a>
           {{#if loggedIn}}
-          <a id="logout">logout</a>
+          <a href="/" id="logout" class="nav-link">logout</a>
           {{else}}
-          <a href="/login">login</a>
+          <a href="/login" class="nav-link">login</a>
           {{/if}}
       </nav>
     </header>
     <main>
       {{{ body }}}
     </main>
-    <footer>
-      Thanks for visiting!
-    </footer>
-  </div>
 
   {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>

@@ -1,19 +1,32 @@
 
-{{> post-info post }}
+<section class="hero">
+    <div><span>Tech Blog</span></div>
+</section>
 
-{{#if loggedIn}}
-<form class="comment-form">
-    <div>
-        <textarea name="comment-body"></textarea>
+<section class="row justify-content-center" id="single-post">
+    <div class="col-sm-10 row" id="single-content">
+        <div class="col-sm-12">
+            {{> post-info post }}
+        </div>  
+
+        {{#if loggedIn}}
+        <form class="comment-form col-sm-12 row justify-content-center">
+            <div class="col-sm-10">
+                <textarea name="comment-body" class="form-control form-control-lg" rows="6"></textarea>
+            </div>
+
+            <div class="col-sm-12 row justify-content-center" id="add-comment">
+                <button type="submit" class="btn buttons" id="comment-btn">add comment</button>
+            </div>
+        </form>
+        {{/if}}
+
+        <div class="col-sm-12">
+            {{> comments post.comments}}
+        </div>
     </div>
+</section>
 
-    <div>
-        <button type="submit">add comment</button>
-    </div>
-</form>
-{{/if}}
-
-{{> comments post.comments}}
 
 {{#if loggedIn}}
 <script src="/javascript/comment.js"></script>

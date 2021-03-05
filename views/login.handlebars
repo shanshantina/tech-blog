@@ -1,18 +1,32 @@
-<form class="login-form">
-  <div>
-    <label for="username-login">Username:</label>
-    <input type="text" id="username-login" />
+<section class="hero">
+    <div><span>Tech Blog</span></div>
+</section>
+
+<form class="row login-form justify-content-center">
+  <div class="col-sm-6 row login">
+    <div class="col-sm-12">
+      <h2>Log In</h2>
+    </div>
+
+    <div class="col-sm-12">
+      <label for="username-login" class="form-label">Username:</label>
+      <input type="text" id="username-login" class="form-control" />
+    </div>
+
+    <div class="col-sm-12">
+      <label for="password-login" class="form-label">Password:</label>
+      <input type="password" id="password-login" class="form-control" />
+    </div>
+
+    <div class="col-sm-6">
+      <button type="submit" class="btn">Login</button>
+    </div>
+
+    <div class=" col-sm-6">
+      <a href="/signup" class="btn">Sign Up Instead</a>
+    </div>
   </div>
-  <div>
-    <label for="password-login">Password:</label>
-    <input type="password" id="password-login" />
-  </div>
-  <div>
-    <button type="submit">Login</button>
-  </div>
-   <div>
-    <a href="/signup">Sign Up Instead</a>
-  </div>
+
 </form>
 
 <script src="/javascript/login.js"></script>

@@ -1,32 +1,33 @@
-<article>
-    <a href="/dashboard">&larr; Back to dashboard</a>
+<section class="hero">
+    <div><span>Tech Blog</span></div>
+</section>
 
-    <h2>
-        Edit Post
-    </h2>
-
-    <form class="edit-post-form">
-        <div>
-            <label for="post-title">Title</label>
-            <input name="post-title" type="text" value="{{post.title}}" />
+<form class="edit-post-form row justify-content-center">
+    <div class="col-sm-7 row forms">    
+        <div class="col-sm-12 row">           
+            <h2 class="col-sm-6">Edit Post</h2>
+            <a href="/dashboard" class="col-sm-6 position">&larr; Back to dashboard</a>
         </div>
 
-         <div>
-            <label for="post-content">Content</label>
-            <input name="post-content" type="text" value="{{post.content}}" />
+        <div class="col-sm-12">
+            <label for="post-title" class="form-label">Title</label>
+            <input name="post-title" type="text" value="{{post.title}}" class="form-control" />
         </div>
 
-        <div>
-            <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
+         <div class="col-sm-12 row">
+            <label for="post-content" class="form-label col-sm-6">Content</label>
+            <a href="/post/{{post.id}}" class="col-sm-6 position">
+                {{post.comments.length}} {{format_plural "comment" post.comments.length}}
+                </a>
+            <textarea name="post-content" type="text" placeholder="{{post.content}}" class="form-control form-control-lg col-sm-12" rows="6">
+            </textarea>
         </div>
 
-        <button type="submit">Update Post</button>
-        <button type="button" class="delete-post-btn">Delete Post</button>
-    </form>
-</article>
-
-
-{{> comments post.comments}}
+      
+        <button type="submit" class="col-sm-4 btn buttons">Update Post</button>
+        <button type="button" class="delete-post-btn col-sm-4 btn buttons">Delete Post</button>
+    </div>
+</form>
 
 
 <script src="/javascript/edit-post.js"></script>
