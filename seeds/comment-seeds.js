@@ -7,11 +7,6 @@ const commentdata = [
     post_id: 1
   },
   {
-    comment_text: 'Morbi a ipsum.',
-    user_id: 1,
-    post_id: 1
-  },
-  {
     comment_text: 'Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.',
     user_id: 1,
     post_id: 2
@@ -28,11 +23,6 @@ const commentdata = [
   },
   {
     comment_text: 'Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.',
-    user_id: 2,
-    post_id: 2
-  },
-  {
-    comment_text: 'Donec ut mauris eget massa tempor convallis.',
     user_id: 2,
     post_id: 2
   },
