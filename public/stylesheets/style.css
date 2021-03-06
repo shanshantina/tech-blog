@@ -3,9 +3,10 @@
     --secondary: rgba(93, 171, 155, 0.8);
     --gradient: linear-gradient(319deg, #92c4a0 12%, #92c59f 42%, #c9e1b8 87%);
     --hover:  rgb(86, 153, 140);
-    --font: #1c665d;
-    --border: rgba(100, 151, 142, 0.9);
+    --font: #1a655c;
+    --border: rgba(136, 187, 160, 0.9);
     --comment: rgba(240, 243, 237, 0.8);
+    --link: rgba(42,132,68,0.9);
 }
 
 html {
@@ -20,17 +21,36 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     background-image: var(--gradient);
     background-attachment: fixed;
+    font-size: 20px;
 }
 
 a {
     color: var(--font);
 }
 
-header nav a, .create-post a {
+a:hover {
+    color: var(--link);
+    text-decoration: none;
+}
+
+.create-post a {
+    transition: all .2s ease-out;
+    background-color: var(--comment);
+    border-radius: 15px;
+}
+
+.create-post a:hover {
+    background: var(--link);
+    border-radius: 15px;
+    text-shadow: none;
+    color: var(--primary);
+}
+
+header nav a {
     transition: all .2s ease-out;
 }
 
-header nav a:hover, .create-post a:hover {
+header nav a:hover {
     background: var(--hover);
     border-radius: 15px;
     text-shadow: none;
@@ -95,13 +115,19 @@ header nav a {
 
 .title a {
     margin: auto;
-    font-size: 30px;
+    font-size: 29px;
     color: var(--font);
+    text-decoration: none;
+}
+
+.title a:hover {
+    text-shadow: none;
+    color: var(--comment);
 }
 
 .title p {
     margin: auto;
-    font-size: 20px;
+    font-size: 21px;
 }
 
 .content {
@@ -140,7 +166,7 @@ header nav a {
 }
 
 label {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .btn {
@@ -175,7 +201,7 @@ label {
 
 .position {
     text-align: end;
-    font-size: 20px;
+    font-size: 21px;
 }
 
 #single-post {
@@ -198,7 +224,7 @@ label {
 }
 
 #comment-list form:nth-child(odd) {
-    background-color: var(--border);
+    background-color: var(--hover);
     border-radius: 6px;
     color: var(--primary);
 }
@@ -224,4 +250,5 @@ footer {
 
 .comment-body, .comment-title {
     background-color: var(--comment);
+    font-size: 20px;
 }
