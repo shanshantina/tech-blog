@@ -12,16 +12,6 @@ const postdata = [
     user_id: 1
   },
   {
-    title: 'Morbi non quam nec dui luctus rutrum.',
-    content: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit',
-    user_id: 1
-  },
-  {
-    title: 'Duis ac nibh.',
-    content: 'Morbi non quam nec dui luctus rutrum.',
-    user_id: 2
-  },
-  {
     title: 'Etiam justo.',
     content: 'Curabitur at ipsum ac tellus semper interdum.',
     user_id: 2
