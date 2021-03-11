@@ -6,7 +6,7 @@
   ## Description
   The Tech Blog which is a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. The app follows the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
 
-  This is the deployed application link: [Tech Blog]()
+  This is the deployed application link: [Tech Blog](https://tech-blog-shanshanxu.herokuapp.com/)
 
 
   ## Table of Contents
@@ -19,9 +19,11 @@
   * [Questions](#questions)
 
   ## Installation
-  No installation required for this application, simplely go to [Tech Blog]() to use.
+  No installation required for this application, simplely go to [Tech Blog](https://tech-blog-shanshanxu.herokuapp.com/) to use.
 
   ## Usage
+
+   [Tech Blog Webpage](https://tech-blog-shanshanxu.herokuapp.com/)
 
    ![demo](./public/assets/image/tech-blog.gif)
 
