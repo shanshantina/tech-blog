@@ -59,7 +59,7 @@
 
   ## Credits
   The lists of resources used to complete this challenge: 
-  1. Module 13 Model-View-Controller (MVC) from canvas. 
+  1. Module 14 Model-View-Controller (MVC) from canvas. 
   2. Google (https://www.google.ca/) 
   3. MDN Web Docs (https://developer.mozilla.org/en-US/docs/Web/JavaScript).
   4. Handlebars (https://www.npmjs.com/package/handlebars).
